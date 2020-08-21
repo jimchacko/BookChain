@@ -4,3 +4,9 @@
 
 /BookChain/.vs/BookChain
 /BookChain/BookChain/bin
+*.bin
+/BookChain/BookChainTests/obj/Debug
+/BookChain/packages
+*.cache
+*.dll
+/BookChain/BookChainTests/bin/Debug

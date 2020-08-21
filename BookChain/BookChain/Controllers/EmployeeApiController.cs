@@ -9,13 +9,25 @@ namespace BookChain.Controllers
     /// </summary>
     public class EmployeeApiController : ApiController
     {
-        private readonly IEmployeeRepository _iEmployeeRepository = new EmployeeRepository();
+        private readonly IEmployeeRepository _iEmployeeRepository;
 
+        public EmployeeApiController()
+        {
+            _iEmployeeRepository = new EmployeeRepository();
+        }
+        public EmployeeApiController(IEmployeeRepository iEmployeeRepository)
+        {
+            _iEmployeeRepository = iEmployeeRepository;
+        }
         [HttpGet]
         [Route("api/Employees/Get")]
         public async Task<IEnumerable<Employee>> Get()
         {
             return await _iEmployeeRepository.GetEmployees();
+        }
+        public async Task<IEnumerable<Employee>> GetAsync()
+        {
+            return await Get();
         }
 
         [HttpPost]

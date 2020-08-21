@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookChain", "BookChain\BookChain.csproj", "{39927ED6-406E-4400-A5E3-DD834FA3BD42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookChainTests", "BookChainTests\BookChainTests.csproj", "{93265BE3-E456-43A7-8132-8D0899970280}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{39927ED6-406E-4400-A5E3-DD834FA3BD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39927ED6-406E-4400-A5E3-DD834FA3BD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39927ED6-406E-4400-A5E3-DD834FA3BD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93265BE3-E456-43A7-8132-8D0899970280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93265BE3-E456-43A7-8132-8D0899970280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93265BE3-E456-43A7-8132-8D0899970280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93265BE3-E456-43A7-8132-8D0899970280}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

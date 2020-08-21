@@ -13,6 +13,7 @@ namespace BookChain.Controllers
     public class EmployeesController : Controller
     {
         readonly string apiBaseAddress = ConfigurationManager.AppSettings["apiBaseAddress"]; // From Webconfig
+        [HandleError]
         public async Task<ActionResult> Index()
         {
             IEnumerable<Employee> employees = null;
@@ -147,7 +148,8 @@ namespace BookChain.Controllers
             {
                 if (employee == null || employee.Name.Trim().Length == 0 || employee.Email.Trim().Length == 0 || employee.Address.Trim().Length == 0)
                 {
-                    ModelState.AddModelError(string.Empty, "Name, Email and Address is mandatory");
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                    //ModelState.AddModelError(string.Empty, "Name, Email and Address is mandatory");
                 }
                 else
                 {
@@ -171,9 +173,9 @@ namespace BookChain.Controllers
             return View(employee);
         }
 
-        public async Task<ActionResult> Delete(string id)
+        public async Task<ActionResult> Delete(int id)
         {
-            if (id == null)
+            if (id == 0)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
