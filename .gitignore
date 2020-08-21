@@ -10,3 +10,4 @@
 *.cache
 *.dll
 /BookChain/BookChainTests/bin/Debug
+*.pdb

@@ -172,3 +172,4 @@ C:\GitHub\Source\Bookchain\BookChain\BookChain\bin\System.Web.Http.WebHost.xml
 C:\GitHub\Source\Bookchain\BookChain\BookChain\obj\Debug\BookChain.csproj.CopyComplete
 C:\GitHub\Source\Bookchain\BookChain\BookChain\obj\Debug\BookChain.dll
 C:\GitHub\Source\Bookchain\BookChain\BookChain\obj\Debug\BookChain.pdb
+C:\GitHub\Source\Bookchain\BookChain\BookChain\obj\Debug\BookChain.csprojAssemblyReference.cache
