@@ -1,0 +1,21 @@
+--Create an  Employee profile table  with 5 fields to  fill in
+
+
+USE [Company]  
+GO  
+--drop table employees
+CREATE TABLE [dbo].[Employees](  
+    [Id] int  identity,  
+    [Name] [nvarchar](50) not NULL,  
+    [Address] [nvarchar](150) not NULL,  
+    [Email] [nvarchar](50) not NULL,  
+    [Company] [nvarchar](50) NULL,  
+    [Designation] [nvarchar](50) NULL,  
+ CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED   
+    (  
+        [Id] ASC  
+    )  
+)  
+GO 
+
+
